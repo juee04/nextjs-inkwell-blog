@@ -45,7 +45,7 @@ These measurements are specific to the local development environment and test co
 
 ## Screenshots
 
-Screenshots of the homepage, blog listing, article page, dashboard, and performance measurements will be added to the `screenshots/` directory.
+Screenshots of the running application are included below to demonstrate the homepage, blog listing, individual article page, and dashboard.
 
 ### Homepage
 ![Inkwell homepage](screenshots/homepage.png)
@@ -67,10 +67,12 @@ Install a supported version of Node.js and npm.
 
 ### Installation
 
+### Installation
+
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/nextjs-inkwell-blog.git
+git clone https://github.com/juee04/nextjs-inkwell-blog.git
 cd nextjs-inkwell-blog
 ```
 
@@ -96,7 +98,7 @@ Create an optimized production build:
 npm run build
 ```
 
-Run the production server:
+Start the production server:
 
 ```bash
 npm run start
@@ -104,19 +106,34 @@ npm run start
 
 ## Project Structure
 
+
+## Project Structure
+
 ```text
-a9-nextjs-blog/
+nextjs-inkwell-blog/
 ├── app/
 │   ├── blog/
+│   │   ├── [slug]/
+│   │   │   └── page.tsx
+│   │   └── page.tsx
 │   ├── dashboard/
-│   ├── page.tsx
-│   └── ...
+│   │   └── page.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── not-found.tsx
+│   └── page.tsx
 ├── lib/
-├── public/
+│   └── posts.ts
 ├── screenshots/
+│   ├── homepage.png
+│   ├── blog-list.png
+│   ├── article-isr.png
+│   └── dashboard-ssr.png
 ├── next.config.ts
 ├── package.json
-└── README.md
+├── package-lock.json
+├── eslint.config.mjs
+└── tsconfig.json
 ```
 
 The exact files and folders may vary slightly with the project structure.
