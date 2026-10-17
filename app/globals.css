@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap");
+:root {
+  --paper: #f7f4ee;
+  --ink: #292821;
+  --muted: #77746b;
+  --line: #ded9cf;
+  --accent: #b76545;
+  --card: #fffdf8;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "DM Sans", sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent);
+}
+.shell {
+  width: min(1080px, calc(100% - 40px));
+  margin: auto;
+}
+nav {
+  height: 82px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav > div {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 13px;
+}
+.brand {
+  font:
+    700 30px "Playfair Display",
+    serif;
+  letter-spacing: -1px;
+}
+.brand span,
+.eyebrow,
+small {
+  color: var(--accent);
+}
+.pill {
+  border: 1px solid #c9c2b6;
+  border-radius: 30px;
+  padding: 10px 14px;
+}
+.hero {
+  padding: 95px 0 70px;
+  max-width: 760px;
+}
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.hero h1,
+.heading h1,
+.article h1,
+.notfound h1 {
+  font:
+    500 clamp(45px, 7vw, 78px)/1.08 "Playfair Display",
+    serif;
+  letter-spacing: -2px;
+  margin: 20px 0;
+}
+.hero h1 em,
+.heading h1 em,
+.article h1 em,
+.notfound h1 em {
+  color: var(--accent);
+}
+.intro {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--muted);
+  max-width: 570px;
+}
+.button {
+  display: inline-block;
+  background: var(--ink);
+  color: white;
+  padding: 14px 19px;
+  margin-top: 18px;
+  font-size: 13px;
+}
+.button:hover {
+  background: var(--accent);
+  color: white;
+}
+.muted {
+  color: var(--muted);
+  font-size: 12px;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 30px 0;
+}
+.features h2 {
+  font:
+    500 22px "Playfair Display",
+    serif;
+}
+.features p,
+.card p,
+.metrics p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+.features small {
+  font-size: 11px;
+}
+footer {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.8px;
+}
+footer span {
+  letter-spacing: 0;
+}
+.heading {
+  padding: 58px 0 30px;
+}
+.heading h1 {
+  font-size: clamp(42px, 6vw, 64px);
+  margin: 14px 0;
+}
+.heading > p:last-child {
+  color: var(--muted);
+  font-size: 14px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  padding: 10px 0 30px;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  min-height: 290px;
+}
+.card small {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.card small span {
+  float: right;
+  color: var(--muted);
+}
+.card h2 {
+  font:
+    500 24px/1.3 "Playfair Display",
+    serif;
+  margin: 25px 0 8px;
+}
+.card p {
+  margin: 0 0 22px;
+}
+.meta {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  margin-top: auto;
+  color: var(--muted);
+  font-size: 11px;
+}
+.read {
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+aside {
+  padding: 17px 19px;
+  margin: 15px 0 28px;
+  background: #eee8dc;
+  color: #5e584e;
+  font-size: 12px;
+  line-height: 1.8;
+}
+code {
+  background: #e3dccf;
+  padding: 3px 5px;
+}
+.article {
+  max-width: 740px;
+  margin: 50px auto;
+}
+.article h1 {
+  font-size: clamp(40px, 6vw, 65px);
+}
+.article .eyebrow {
+  margin-top: 40px;
+}
+.article .intro {
+  font-size: 18px;
+}
+.article .meta {
+  margin: 25px 0;
+}
+.body-copy {
+  font:
+    20px/1.9 "Playfair Display",
+    serif;
+  color: #49463e;
+}
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.metrics article {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 22px;
+  min-height: 160px;
+}
+.metrics small {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.metrics strong {
+  display: block;
+  font:
+    500 42px "Playfair Display",
+    serif;
+  margin: 16px 0 8px;
+}
+.metrics .time {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.notfound {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media (max-width: 700px) {
+  .features,
+  .cards,
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding: 65px 0 50px;
+  }
+  nav > div {
+    gap: 10px;
+    font-size: 11px;
+  }
+  .pill {
+    padding: 8px;
+  }
+  .features {
+    gap: 12px;
+  }
+  .card {
+    min-height: 240px;
+  }
+}

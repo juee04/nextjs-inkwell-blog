@@ -1,0 +1,22 @@
+out
+build
+*.tsbuildinfo
+next-env.d.ts
+
+# Dependencies
+node_modules/
+
+# Next.js generated files
+.next/
+out/
+build/
+
+# Environment variables and secrets
+.env*
+!.env.example
+
+# TypeScript
+*.tsbuildinfo
+
+# Debug logs
+npm-debug.log*
